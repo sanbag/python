@@ -8,3 +8,6 @@ def move_zeros_to_begining(arr):
     return arr
 
 print(move_zeros_to_begining([1,0,0,1,3,4]))
+
+
+print(move_zeros_to_begining([0, 1, 0, 2, 0, 3]))

@@ -5,13 +5,14 @@ def find_second_largest(arr):
     first = second = float('-inf')
 
     for num in arr:
-        if num > first:
+        if num>first:
             second = first
             first = num
 
         elif first>num>second:
-            second = num
-
+            second =num
     return second if second != float('-inf') else None
 
-print(find_second_largest([10, 20, 4, 45, 99]))
+
+print(find_second_largest([1,2,3,4,5,6]))
+

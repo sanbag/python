@@ -1,4 +1,4 @@
-def rotate_the_array(arr,k):
+def rotate_the_array_brute_force(arr,k):
 
     while k>0:
         final = arr[len(arr)-1]
@@ -11,8 +11,20 @@ def rotate_the_array(arr,k):
 
     return arr
 
-print(rotate_the_array([1,2,3,4,5,6,7],3))
+# print(rotate_the_array_brute_force([1,2,3,4,5,6,7],3))
+
+def rotate_the_array_slicing(arr,k):
+    n= len(arr)
+
+    arr = arr[-k:]+arr[:-k]
+    return arr
+
+print(rotate_the_array_slicing([1,2,3,4,5,6,7],3))
+
+def rotate_the_array_better(arr):
+    emp =[]
 
 
-san =[1,2,3,4,5,6,7]
-ans =[7,1,2,3,4,5,6]
+
+
+

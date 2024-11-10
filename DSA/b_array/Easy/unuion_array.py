@@ -24,6 +24,7 @@ def using_dicts(arr1,arr2):
     print(uniqe)
 using_dicts([1, 2, 3, 4, 5, 6, 7, 8, 9, 10],[2, 3, 4, 4, 5, 11, 12])
 
+<<<<<<< HEAD
 def using_two_pointer(arr1,arr2):
     a1 =0
     a2= 0
@@ -54,3 +55,5 @@ def using_two_pointer(arr1,arr2):
     return union
 
 print(using_two_pointer([1, 2, 3, 4, 5, 6, 7, 8, 9, 10],[2, 3, 4, 4, 5, 11, 12]))
+=======
+>>>>>>> ebd97fd8f5c8e206e294aecd621a533560a3c7f3

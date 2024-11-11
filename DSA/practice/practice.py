@@ -1,18 +1,15 @@
-def selection_sort(arr):
-    min = 0
-
-    for i in range(len(arr)):
-        pointer =i
-        for j in range(1,len(arr)):
-            if arr[j]<arr[i]:
-                arr[j],arr[i]=arr[i],arr[j]
-                pointer = j
+def move_zero_to_end(arr):
+    l=len(arr)-1
+    for i  in range(len(arr)-1,-1,-1):
+        if arr[i]==0:
+            arr[l],arr[i]=arr[i],arr[l]
+            l-=1
 
     return arr
 
 
-print(selection_sort([64, 25, 12, 22, 11,1]))
 
 
 
 
+print(move_zero_to_end([1,0,0,1,1,0,1,1,1]))

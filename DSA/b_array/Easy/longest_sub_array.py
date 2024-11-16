@@ -15,5 +15,4 @@ def longest_sub_array_brute(arr,k):
 
 
 
-
 print(longest_sub_array_brute([1,2,3,1,1,1,1,4,2,3],4))

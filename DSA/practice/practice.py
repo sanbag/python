@@ -16,3 +16,5 @@ def move_zero(arr):
             l+=1
     return arr
 print(move_zero([1,0,0,1,1,0,1,1,1,0]))
+
+print('Hi')

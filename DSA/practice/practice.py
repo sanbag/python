@@ -17,4 +17,4 @@ def move_zero(arr):
     return arr
 print(move_zero([1,0,0,1,1,0,1,1,1,0]))
 
-print('Hi')
+print('Hello')

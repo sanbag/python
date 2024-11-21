@@ -14,3 +14,4 @@ def majority_element(arr):
 
 
 print(majority_element([2,1,1,3,1,2]))
+print('Hi')

@@ -1,22 +1,21 @@
-def max_sub_array(arr):
-    maximum_sum = float("-inf")
-    sum =0
-    start_index = -1
-    end_index = -1
-    tem_start_index = -1
-    for i in range(len(arr)):
-        if sum == 0:
-            tem_start_index = i
-        sum += arr[i]
+def buy_sell_stock(arr):
+    min_value = arr[0]
+    min_index = 0  # To track the index of the minimum value
+    max_diff = float("-inf")
+    start_day = -1
+    end_day = -1
+
+    for i in range(1, len(arr)):
+        diff = arr[i] - min_value
+        if diff > max_diff:
+            max_diff = diff
+            start_day = min_index  # Start day is where the min_value occurred
+            end_day = i
+        if arr[i] < min_value:
+            min_value = arr[i]
+            min_index = i  # Update the index of the new minimum value
+
+    return max_diff, start_day, end_day
 
 
-        if sum > maximum_sum:
-            maximum_sum =sum
-            start_index = tem_start_index
-            end_index = i
-
-        if sum <0:
-            sum = 0
-    return  maximum_sum,start_index,end_index
-
-print(max_sub_array([-2,-3,4,-1,-2,1,7,-3,-1,-10,-1]))
+print(buy_sell_stock([7, 2, 5, 6, 3, 6, 4,1,9]))

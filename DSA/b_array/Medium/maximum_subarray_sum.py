@@ -18,4 +18,4 @@ def max_sub_array(arr):
             sum = 0
     return  maximum_sum,start_index,end_index
 print(max_sub_array([-2,3,4,-1,-2,1,7,-3,-1,-10,-1]))
-print("Hi")
+print("Hello")

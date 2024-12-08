@@ -39,5 +39,5 @@ def maintain_order(strr):
     out+=str(count)+strr[i]
     print(out)
 
-maintain_order('abaa')
+maintain_order('abaaa')
 
